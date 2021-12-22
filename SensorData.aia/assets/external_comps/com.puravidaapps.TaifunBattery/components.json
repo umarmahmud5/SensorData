@@ -1,0 +1,136 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "https://puravidaapps.com/images/taifun16.png",
+ "methods": [],
+ "blockProperties": [
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Capacity",
+   "description": "Returns remaining battery capacity as an integer percentage of total capacity (with no fractional part). Requires API Level 21, Android 5, Lollipop.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "ChargeCounter",
+   "description": "Returns Battery capacity in microampere-hours, as an integer. Requires API Level 21, Android 5, Lollipop.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "CurrentAvg",
+   "description": "Returns average battery current in microamperes, as an integer. Positive values indicate net current entering the battery from a charge source, negative values indicate net current discharging from the battery. The time period over which the average is computed may depend on the fuel gauge hardware and its configuration. Requires API Level 21, Android 5, Lollipop.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "CurrentNow",
+   "description": "Returns Instantaneous battery current in microamperes, as an integer. Positive values indicate net current entering the battery from a charge source, negative values indicate net current discharging from the battery. Requires API Level 21, Android 5, Lollipop.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "EnergyCounter",
+   "description": "Returns Battery remaining energy in nanowatt-hours, as a long integer. Requires API Level 21, Android 5, Lollipop.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Health",
+   "description": "Returns the current health constant. Possible values are: cold, dead, good, overheat, over voltage, unknown, unspecified failure.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Level",
+   "description": "Returns the battery level. Possible values are between 0 and 100.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Plugged",
+   "description": "Returns the battery plugged status. Possible values are: usb, ac, wireless or unknown.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Status",
+   "description": "Returns the battery status. Possible values are: charging, full, discharging, not charging or unknown.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Technology",
+   "description": "Returns the battery technology.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Temperature",
+   "description": "Returns the battery temperature in celcius.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Voltage",
+   "description": "Returns the battery voltage level in millivolts.",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "https://puravidaapps.com/battery.php",
+ "type": "com.puravidaapps.TaifunBattery",
+ "androidMinSdk": 7,
+ "version": "2",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "TaifunBattery",
+ "helpString": "Battery Manager extension. Version 2 as of 2019-03-11 for App Inventor version nb175 and Companion version 2.51.",
+ "properties": [],
+ "events": [{
+  "deprecated": "false",
+  "name": "BatteryChanged",
+  "description": "Event indicating that battery changed.",
+  "params": [
+   {
+    "name": "status",
+    "type": "text"
+   },
+   {
+    "name": "plugged",
+    "type": "text"
+   },
+   {
+    "name": "level",
+    "type": "number"
+   },
+   {
+    "name": "health",
+    "type": "text"
+   },
+   {
+    "name": "temperature",
+    "type": "number"
+   },
+   {
+    "name": "voltage",
+    "type": "number"
+   },
+   {
+    "name": "technology",
+    "type": "text"
+   }
+  ]
+ }]
+}]

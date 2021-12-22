@@ -1,0 +1,32 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2020-09-25T17:29:25+0200",
+ "nonVisible": "true",
+ "iconName": "https://bodymindpower.de/temp/BMP_icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "AppSpecificDirectory",
+   "description": "Returns the path of ASD",
+   "params": [],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "CreateAppSpecificDirectory",
+   "description": "Creates an AppSpecificDirectory - ASD",
+   "params": []
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "de.bodymindpower.GetASD.GetASD",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "GetASD",
+ "helpString": "Get path to ASD: /storage/emulated/0/Android/data/packageName/files/.",
+ "properties": [],
+ "events": []
+}]
